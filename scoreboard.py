@@ -1,4 +1,5 @@
 from turtle import Turtle
+
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "bold")
 
@@ -8,11 +9,12 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        self.highest_score = 0
+        with open("data.txt") as data:
+            self.highest_score = int(data.read())
         self.color("yellow")
         self.penup()
         self.goto(0, 350)
-        self.write(f"Score: {self.score}", align=ALIGNMENT,
+        self.write(f"SCORE: {self.score} Highest Score: {self.highest_score}", align=ALIGNMENT,
                    font=FONT)
         self.hideturtle()
 
@@ -23,12 +25,14 @@ class Scoreboard(Turtle):
 
     def update_score(self):
         self.clear()
-        self.write(f"SCORE: {self.score} High Score: {self.highest_score}", align=ALIGNMENT,
+        self.write(f"SCORE: {self.score} Highest Score: {self.highest_score}", align=ALIGNMENT,
                    font=FONT)
 
     def reset(self):
         if self.score > self.highest_score:
             self.highest_score = self.score
+            with open("data.txt", mode="w") as data:
+                data.write(f"{self.highest_score}")
         self.score = 0
         self.update_score()
 

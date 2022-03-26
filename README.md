@@ -1,8 +1,9 @@
 # <Strong>_Description_</Strong>
 
-The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, typically 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student.
+This game is similar with origin snake game.
 
-You have work on the task for 25 minutes. And then after that, you take a short 5 minutes break. And after you've done four of these Pomodoros, basically four repetition, then you get to take a long 20 minutes break.
+The player used "W","A","S","D" to control the snake. The snake would grow up when it reach the turtle. The target is making the snake as long as you can. On the other hand, when you reach the border or the head hit the body,the game would be over.
+
 <br  />
 
 # <Strong>_Tools & Git page_</Strong>
@@ -22,22 +23,13 @@ You have work on the task for 25 minutes. And then after that, you take a short 
 # <Strong>_Features_</Strong>
 
 ## <Strong>_Home_</Strong>
-You can click "Start" button to activate clock. And you can also hit "reset" button to reset and stop it.
+The data.txt would record the Highest score before.
 
 <img src = "./screenshot/Home.png">
 
-## <Strong>_Work_</Strong>
+## <Strong>_Game over_</Strong>
 
-<img src = "./screenshot/work.png">
+<img src = "./screenshot/Game_over.png">
 
-## <Strong>_Short break_</Strong>
-After work time, you would recieve a break time
-
-<img src = "./screenshot/Five_minutes.png">
-
-## <Strong>_Long break_</Strong>
-You've done four of these Pomodoros, you get to take a 25 minutes break.
-
-<img src = "./screenshot/Long_break.png">
 
 <br  />
